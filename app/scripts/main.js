@@ -1,14 +1,20 @@
-$("#menu-close").click(function(e) {
+$('#menu-close').click(function(e) {
+    'use strict';
+
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+    $('#sidebar-wrapper').toggleClass('active');
 });
-$("#menu-toggle").click(function(e) {
+$('#menu-toggle').click(function(e) {
+    'use strict';
+
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+    $('#sidebar-wrapper').toggleClass('active');
 });
 $(function() {
+    'use strict';
+
     $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
 
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
