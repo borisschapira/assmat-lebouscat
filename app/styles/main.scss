@@ -1,6 +1,7 @@
 $fa-font-path: "/bower_components/fontawesome/fonts";
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $textcolor: #11055a;
+$lighttextcolor: #b1b0ff;
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
@@ -9,12 +10,13 @@ $textcolor: #11055a;
 
 body {
   color: $textcolor;
+  font-family: 'Pacifico', cursive;
+  background-color: rgb(255, 253, 252);
 }
 
 h1, h2, h3 {
-  font-family: 'Pacifico', cursive;
   color: $textcolor;
-  text-shadow: 0 0 7px rgba(255, 255, 255, .9);
+  text-shadow: 0 0 7px rgba(255, 253, 252, .9);
 }
 
 #sidebar-wrapper {
@@ -27,7 +29,7 @@ h1, h2, h3 {
 
 .header {
   .btn-default {
-    background-color: #f0f0d5;
+    background-color: $textcolor;
   }
 }
 
@@ -35,8 +37,42 @@ h1, h2, h3 {
   background-image: url(../images/coeurs.jpg);
   color: $textcolor;
 
-  .service-item p {
-    font-size: 1em;
+  i.service-icon {
+    border-color: $lighttextcolor;
   }
 
+  .service-item p {
+    font-size: 18px;
+  }
+
+}
+
+.callout {
+  h1 {
+    color: #FFF;
+    text-shadow: 0 0 7px rgba(17, 5, 90, .9);
+  }
+}
+
+.portfolio {
+  .portfolio-item {
+    img {
+      border-radius: 130px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+}
+
+#contact {
+  h2 {
+    color: #FFF;
+    text-shadow: 0 0 7px rgba(17, 5, 90, .9);
+  }
+
+  .btn {
+    font-size: 28px;
+  }
 }
