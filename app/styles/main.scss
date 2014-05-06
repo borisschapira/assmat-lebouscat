@@ -10,12 +10,13 @@ $lighttextcolor: #b1b0ff;
 
 body {
   color: $textcolor;
-  font-family: 'Pacifico', cursive;
+  font-family: cursive;
   background-color: rgb(255, 253, 252);
 }
 
 h1, h2, h3 {
   color: $textcolor;
+  font-family: 'Pacifico', cursive;
   text-shadow: 0 0 7px rgba(255, 253, 252, .9);
 }
 
@@ -31,6 +32,10 @@ h1, h2, h3 {
   .btn-default {
     background-color: $textcolor;
   }
+}
+
+.intro .lead {
+  font-family: cursive;
 }
 
 .services {
